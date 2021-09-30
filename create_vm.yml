@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+   - name: Delete vm RHEL
+     vmware_guest:
+       validate_certs: False
+       name: xx
+       datacenter: "Desarrollo y Pruebas"
+       folder: "POC_ANSIBLE"
+       state: absent
+       cluster:  
+       hostname:  
+       username: "{{ usuario }}"
+       password: "{{ password }}"
