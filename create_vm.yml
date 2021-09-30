@@ -11,13 +11,13 @@
            boot: 'true'
            initialize_params:
              source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts
-        machine_type: n1-standard-1
-        network_interfaces:
-        - network: "{{ network }}"
-          access_configs:
-          - name: test-config
-            type: ONE_TO_ONE_NAT
-            nat_ip: "{{ address }}"
-      project: POC-Pruebas-Devops
-      auth_kind: serviceaccount
-      state: present
+       machine_type: n1-standard-1
+       network_interfaces:
+       - network: "{{ network }}"
+         access_configs:
+         - name: test-config
+           type: ONE_TO_ONE_NAT
+           nat_ip: "{{ address }}"
+     project: POC-Pruebas-Devops
+     auth_kind: serviceaccount
+     state: present
