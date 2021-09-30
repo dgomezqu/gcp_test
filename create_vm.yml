@@ -8,9 +8,9 @@
        properties:
          disks:
          - auto_delete: 'true'
-          boot: 'true'
-          initialize_params:
-            source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts
+           boot: 'true'
+           initialize_params:
+             source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts
         machine_type: n1-standard-1
         network_interfaces:
         - network: "{{ network }}"
